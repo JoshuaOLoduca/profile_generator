@@ -30,13 +30,13 @@ const askQuestions = questions => {
   rl.question(question + ': ', (answer) => {
     answers[answerID] = answer;
     
-    askQuestions(questions.slice(1))
+    askQuestions(questions.slice(1));
   });
-}
+};
 
 const printProfile = (person) => {
   console.log(`I'm ${person.name} and I enjoy ${person.hobby}. When I need to lose track of time, I pump some ${person.music}.\nBut I will never miss ${person.mealtime}! I love ${person.food} too much!\nThats why I play ${person.sport}. Its fun and healthy.\nIf you get me out to a party, you might see me ${person.talent}`);
-}
+};
 
 
 askQuestions(questions);
